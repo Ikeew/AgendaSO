@@ -50,7 +50,7 @@ void deleteContact(Contact *contacts, int *size) {
 }
 
 void saveContacts(const Contact *contacts, int size) {
-    FILE *file = fopen("C:/Users/ikikl/CLionProjects/untitled/contatos.dat", "wb");
+    FILE *file = fopen("C:/Users/ikikl/OneDrive/Documents/GitHub/AgendaSO/contatos.dat", "wb");
     if (file == NULL) {
         printf("Erro ao abrir arquivo.\n");
         return;
@@ -61,7 +61,7 @@ void saveContacts(const Contact *contacts, int size) {
 }
 
 void loadContacts(Contact *contacts, int *size) {
-    FILE *file = fopen("C:/Users/ikikl/CLionProjects/untitled/contatos.dat", "rb");
+    FILE *file = fopen("C:/Users/ikikl/OneDrive/Documents/GitHub/AgendaSO/contatos.dat", "rb");
     if (file == NULL) {
         *size = 0;
         return;
